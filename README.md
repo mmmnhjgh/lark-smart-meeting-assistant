@@ -27,7 +27,7 @@
 |------|------|
 | 🎥 **自动获取会议纪要** | 查询指定时间范围内的会议记录和纪要 |
 | ✅ **智能提取待办事项** | 从纪要中识别任务、负责人、截止时间 |
-| 📋 **创建飞书任务** | 自动将待办事项创建为飞飞书任务并分配给相关人员 |
+| 📋 **创建飞书任务** | 自动将待办事项创建为飞书任务并分配给相关人员 |
 | 📧 **发送会议总结** | 自动生成会议总结并发送给参会人 |
 | 📊 **生成会议报告** | 创建结构化的会议周报或日报 |
 
@@ -56,7 +56,7 @@ npx skills add https://github.com/larksuite/cli -y -g
 lark-cli config init
 
 # 授权登录（需要访问会议、任务、邮件等）
-lark-cli auth auth login --domain vc,drive,task,mail,doc
+lark-cli auth login --domain vc,drive,task,mail,doc
 ```
 
 **授权说明**：
@@ -107,7 +107,7 @@ npx skills list
 帮我处理今天的会议纪要
 ```
 
-AI Agent 会自动：
+AI Agent 会会自动：
 1. 查询今天的会议记录
 2. 获取每个会议的纪要
 3. 读取纪要内容
@@ -152,7 +152,7 @@ lark-cli mail +send --to "<email>" --subject "会议总结" --body "<内容>"
 **AI Agent 自动执行**：
 ```bash
 # 1. 查询本周会议
-larkark-cli vc +search --start "2026-04-07" --end "2026-04-13" --format json
+lark-cli vc +search --start "2026-04-07" --end "2026-04-13" --format json
 
 # 2. 批量获取纪要
 lark-cli vc +notes --meeting-ids "id1,id2,id3"
@@ -296,7 +296,7 @@ lark-cli task +create \
 # 发送会议总结邮件
 lark-cli mail +send \
   --to "<email1>,<email2>" \
-  --subject "【会议总结】项目进度评审部会" \
+  --subject "【会议总结】项目进度评审会" \
   --body "会议时间：2026-04-08 14:00-15:00
 参会人员：张三、李四、王五
 
@@ -417,24 +417,7 @@ lark-cli auth login --scope "<missing_scope>"
 - ✅ **技术完整**：覆盖飞书 6 大业务域
 - ✅ **创新性**：AI 驱动的智能待办提取
 - ✅ **易用性**：自然语言交互，零代码使用
-
-### 提交方式
-
-1. 将本 Skill 上传到 GitHub 仓库
-2. 在飞书 CLI 创作者大赛页面提交仓库链接
-3. 填写作品说明和演示视频（可选）
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request 来改进这个 Skill！
-
-### 贡献指南
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
+- ✅ **一键安装**：支持通过 GitHub 仓库链接直接安装
 
 ## 📄 许可证
 
