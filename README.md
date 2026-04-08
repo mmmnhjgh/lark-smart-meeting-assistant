@@ -25,9 +25,9 @@
 
 | 功能 | 描述 |
 |------|------|
-| 🎥 **自动获取会议纪要** | 查询指定时间范围内的了会议记录和纪要 |
+| 🎥 **自动获取会议纪要** | 查询指定时间范围内的会议记录和纪要 |
 | ✅ **智能提取待办事项** | 从纪要中识别任务、负责人、截止时间 |
-| 📋 **创建飞书任务** | 自动将待办事项创建为飞书任务并分配给相关人员 |
+| 📋 **创建飞书任务** | 自动将待办事项创建为飞飞书任务并分配给相关人员 |
 | 📧 **发送会议总结** | 自动生成会议总结并发送给参会人 |
 | 📊 **生成会议报告** | 创建结构化的会议周报或日报 |
 
@@ -43,7 +43,7 @@
 
 ```bash
 # 全局安装飞书 CLI
-npm installl -g @larksuite/cli
+npm install -g @larksuite/cli
 
 # 安装官方 Skills
 npx skills add https://github.com/larksuite/cli -y -g
@@ -56,7 +56,7 @@ npx skills add https://github.com/larksuite/cli -y -g
 lark-cli config init
 
 # 授权登录（需要访问会议、任务、邮件等）
-lark-cli auth login --domain vc,drive,task,mail,doc
+lark-cli auth auth login --domain vc,drive,task,mail,doc
 ```
 
 **授权说明**：
@@ -68,7 +68,19 @@ lark-cli auth login --domain vc,drive,task,mail,doc
 
 ### 3. 安装本 Skill
 
-#### 方式 1：手动安装（推荐）
+#### 🌟 方式 1：通过 GitHub 仓库链接安装（推荐）
+
+```bash
+# 直接使用 GitHub 仓库链接安装
+npx skills add https://github.com/mmmnhjgh/lark-smart-meeting-assistant -y -g
+```
+
+**优势**：
+- ✅ 一键安装，无需手动下载
+- ✅ 自动获取最新版本
+- ✅ 适合分享给其他用户
+
+#### 📦 方式 2：手动安装
 
 ```bash
 # Linux/macOS
@@ -76,13 +88,6 @@ cp -r lark-smart-meeting-assistant ~/.trae-cn/skills/
 
 # Windows
 xcopy /E /I lark-smart-meeting-assistant %USERPROFILE%\.trae-cn\skills\
-```
-
-#### 方式 2：使用 npx 安装
-
-```bash
-# 从 GitHub 仓库安装
-npx skills add https://github.com/你的用户名/lark-smart-meeting-assistant -y -g
 ```
 
 ### 4. 验证安装
@@ -147,7 +152,7 @@ lark-cli mail +send --to "<email>" --subject "会议总结" --body "<内容>"
 **AI Agent 自动执行**：
 ```bash
 # 1. 查询本周会议
-lark-cli vc +search --start "2026-04-07" --end "2026-04-13" --format json
+larkark-cli vc +search --start "2026-04-07" --end "2026-04-13" --format json
 
 # 2. 批量获取纪要
 lark-cli vc +notes --meeting-ids "id1,id2,id3"
@@ -291,7 +296,7 @@ lark-cli task +create \
 # 发送会议总结邮件
 lark-cli mail +send \
   --to "<email1>,<email2>" \
-  --subject "【会议总结】项目进度评审会" \
+  --subject "【会议总结】项目进度评审部会" \
   --body "会议时间：2026-04-08 14:00-15:00
 参会人员：张三、李四、王五
 
@@ -429,7 +434,7 @@ lark-cli auth login --scope "<missing_scope>"
 2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5.免启 Pull Request
+5. 开启 Pull Request
 
 ## 📄 许可证
 
