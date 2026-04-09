@@ -1,0 +1,34 @@
+{
+  "meeting": {
+    "default_time_range": {
+      "today": "2026-04-08",
+      "week": "2026-04-07,2026-04-13",
+      "month": "2026-04-01,2026-04-30"
+    },
+    "reminder": {
+      "enabled": true,
+      "lead_time": 30, // 提前30分钟提醒
+      "task_list": "tasklist_xxxxxxxxxxxxx"
+    }
+  },
+  "task": {
+    "default_assignee": "ou_e47efa3f7bec0d546112535c781f73d1",
+    "status_tracking": {
+      "enabled": true,
+      "check_interval": 24, // 每24小时检查一次
+      "notification": true
+    }
+  },
+  "mail": {
+    "default_sender": "your-email@example.com",
+    "template": {
+      "subject": "【会议总结】{meeting_title}",
+      "body": "会议时间：{meeting_time}\n参会人员：{attendees}\n\n会议要点：\n{key_points}\n\n待办事项：\n{todo_items}\n\n会议纪要：{note_link}\n逐字稿：{verbatim_link}"
+    }
+  },
+  "report": {
+    "default_title": "会议周报 ({start_date} - {end_date})",
+    "include_charts": true,
+    "output_format": "markdown"
+  }
+}
