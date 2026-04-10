@@ -695,9 +695,7 @@ fi
 - [SKILL.md](./SKILL.md) - 详细的 Skill 使用说明
 - [examples.md](./examples.md) - 详细的使用示例
 
-## 🏆 参赛信息
 
-本作品参加 **飞书 CLI 创作者大赛**
 
 ### 作品特点
 
