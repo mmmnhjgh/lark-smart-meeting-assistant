@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![飞书 CLI](https://img.shields.io/badge/飞书%20CLI-v1.0.7-blue)
+![飞书 CLI](https://img.shields.io/badge/飞书%20CLI-v1.0.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Skill](https://img.shields.io/badge/Skill-AI%20Agent-orange)
 ![Version](https://img.shields.io/badge/version-1.1.0-orange)
